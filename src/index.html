@@ -8,6 +8,11 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-  <nc-user-list></nc-user-list>
+  <nc-user-list 
+  users='[{"id":1,"name":"Nicolas","phone":"11985684547","address":{"street":"rua fulano"}}]'
+  token="olala"
+  (onClickUserFunction)="console.log('teste')"
+  >
+  </nc-user-list>
 </body>
 </html>
